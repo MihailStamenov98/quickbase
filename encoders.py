@@ -15,8 +15,8 @@ def embed_text_with_bert(text):
     bert_tokenizer, bert_model = load_bert()
     inputs = bert_tokenizer(text, return_tensors="pt", padding=True, truncation=True)
     print(inputs.shape)
-    outputs = bert_model(**inputs)
-    return outputs.last_hidden_state[:, 0, :].detach()
+    #outputs = bert_model(**inputs)
+    #return outputs.last_hidden_state[:, 0, :].detach()
 
 def embed_text_with_electra(text):
     electra_tokenizer, electra_model = load_electra()

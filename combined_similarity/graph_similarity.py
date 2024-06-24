@@ -40,7 +40,7 @@ def compute_graph_edit_distance(json_data1, json_data2):
     G1 = json_to_graph(json_data1)
     G2 = json_to_graph(json_data2)
     
-    ged = graph_edit_distance(G1, G2)
+    ged = nx.graph_edit_distance(G1, G2)
     
     # Since graph_edit_distance returns an iterator, we take the first value (approximation)
     return next(ged)
