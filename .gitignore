@@ -1,2 +1,6 @@
 .venv/
 __pycache__/
+electra-small-model/
+electra-small-tokenizerr/
+bert-base-uncased-tokenizer/
+bert-base-uncased-model/
