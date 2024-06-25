@@ -1,9 +1,9 @@
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import os
+import json
 
 def load_json(file_path):
-    import json
     with open(file_path, 'r') as file:
         return json.load(file)
 def load_encoded_features(file_path):

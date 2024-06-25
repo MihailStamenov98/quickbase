@@ -9,7 +9,7 @@ def combined_similarity(schema1, schema2):
 
 # Finding the most similar JSON
 def find_most_similar(query_schema, schemas):
-    similarities = {}
+    similarities  = {}
     for app_id, schema in schemas.items():
         similarities[app_id] = combined_similarity(query_schema, schema)
     return max(similarities, key=similarities.get)
