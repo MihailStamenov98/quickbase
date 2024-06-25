@@ -47,7 +47,7 @@ def get_tables_descriptions(json_data):
         table_descriptions.append("\n")
     return table_descriptions
 
-def json_to_schema_description(json_data):
+def json_to_schema_description(json_data, text = True):
     schema_description = []
     app_name = json_data.get("ai_dict", {}).get("name", "Unknown App")
     description = json_data.get("ai_dict", {}).get("description", "No description available.")
@@ -56,9 +56,4 @@ def json_to_schema_description(json_data):
     schema_description = "\n".join(schema_description)
     tables_descriptions = get_tables_descriptions(json_data)
     tables_descriptions.insert(0, schema_description)
-    return tables_descriptions
-
-#with open('app1.json') as f:
-#    json_data = json.load(f)
-#
-#schema_description = json_to_schema_description(json_data)
+    return "\n".join(tables_descriptions) if text else tables_descriptions
