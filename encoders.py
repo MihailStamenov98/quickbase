@@ -2,18 +2,18 @@ from transformers import ElectraTokenizer, ElectraModel
 from transformers import BertTokenizer, BertModel
 from load_models import *
 from json_to_schema_description import *
-
+import re
 def sliding_window_chunks(text, window_size = 512, stride = 128):
   chunks = []
-  words = text.split()
-  size = len(text)
+  words = re.findall(r'\S+|\s+', text)
+  size = len(words)
   for i in range(0, size, stride):
     start = i
     end = i + window_size
     if end > len(words):
       end = len(words)
       start = end - stride
-    chunk = ' '.join(words[start:end])
+    chunk = ''.join(words[start:end])
     chunks.append(chunk)
   return chunks
 
