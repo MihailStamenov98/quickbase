@@ -1,8 +1,6 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from utils import *
-import json
-from json_to_schema_description import *
-
+from predictors.json_to_schema_description import *
+from sklearn.metrics.pairwise import cosine_similarity
 
 def json_to_features(json_objects, query_json):
     target_features = json_to_schema_description(query_json)
