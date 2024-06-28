@@ -4,7 +4,7 @@ This project intends to give example solutions to the problem described in `task
 
 ## Overview
 
-To test the solutions, run `main.py` and follow the instructions. Three approaches were implemented:
+To test the solutions, run `main.py` and follow the instructions. Four approaches were implemented:
 
 1. **BERT Encoder**:
    - Descriptions of all given JSON files are encoded using the BERT encoder to receive vector representations of all JSON files.
@@ -16,6 +16,9 @@ To test the solutions, run `main.py` and follow the instructions. Three approach
 
 3. **TF-IDF Vectorization**:
    - Creates vectors of all TF-IDF values of all words from the dictionary created from the words in the JSON files.
+
+4. **Graph symmetry**:
+   - Creates graphs of all JSON files and compares the graph of the query JSON with each of the graphs.
 
 ## Execution Notes
 
