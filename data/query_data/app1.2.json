@@ -171,7 +171,7 @@
                 "name": "Related Company",
                 "type": "FK",
                 "parent": "Companies",
-                "proxyDisplayField": "Company Name"
+                "proxyDisplayField": "Company Nam"
               },
               {
                 "name": "Company Name",
@@ -179,7 +179,7 @@
                 "lookup": {
                   "foreignKeyField": "Related Company",
                   "parentTable": "Companies",
-                  "parentField": "Company Name"
+                  "parentField": "Company Nam"
                 }
               },
               {
@@ -188,7 +188,7 @@
                 "lookup": {
                   "foreignKeyField": "Related Company",
                   "parentTable": "Companies",
-                  "parentField": "Phone"
+                  "parentField": "Phon"
                 }
               },
               {
@@ -231,5 +231,5 @@
           }
         ]
       },
-      "search_value": "Companies (Company Name, Address, Web, Phone, Industry, Lead Status, Lead Source, Assigned To, Fax, Time Zone, # of Contacts, # of Activities, Most Recent Activity Date), Contacts (Contact Full Name, Title / Job Function, Phone, Fax, Mobile, Email, Address, Different Contact Address?, First Name, Last Name, Company Name, Company Phone, Company State, Company Website, Assigned Rep, Company - Address, Most Recent Activity Date, # of Activities), Activities (Activity Type, Activity Date, Duration (mins), Created By, Notes, Activity, iCalendar Notes, Meeting Info / Location, Related Company, Schedule Status, Scheduled Activity Date, Scheduled Activity Subject, Scheduled End Date / Time, Scheduled End Time, Scheduled For, Scheduled Start Date / Time, Scheduled Start Time, Attempt Successful?, Contact Full Name, Company Name)"
+      "search_value": "Companies (Company Nam, Address, Web, Phon, Industry, Lead Status, Lead Source, Assigned To, Fax, Time Zone, # of Contacts, # of Activities, Most Recent Activity Date), Contacts (Contact Full Name, Title / Job Function, Phone, Fax, Mobile, Email, Address, Different Contact Address?, First Name, Last Name, Company Name, Company Phone, Company State, Company Website, Assigned Rep, Company - Address, Most Recent Activity Date, # of Activities), Activities (Activity Type, Activity Date, Duration (mins), Created By, Notes, Activity, iCalendar Notes, Meeting Info / Location, Related Company, Schedule Status, Scheduled Activity Date, Scheduled Activity Subject, Scheduled End Date / Time, Scheduled End Time, Scheduled For, Scheduled Start Date / Time, Scheduled Start Time, Attempt Successful?, Contact Full Name, Company Name)"
     }
