@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 import json
 
+
 class Predictor(ABC):
     def __init__(self, json_objects):
         if isinstance(json_objects, str):
